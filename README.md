@@ -1,17 +1,17 @@
 # Project_final
 
-In this project, a complete Machine Learning project is developed. Specifically, we have focused on analysing and studying a dataset that predicts whether a song will be a hit or not. To do this, we have implemented the steps in AWS:
+This project involves the development of a comprehensive Machine Learning pipeline. The main focus was on exploring and analyzing a dataset to predict whether a song will become a hit or not. The following steps were implemented using AWS:
 
-Step 1: We have created an instance in SageMaker of a Jupyter Notebook.
+Step 1: A SageMaker instance of Jupyter Notebook was created.
 
-Step 2: We created a bucket where we uploaded the dataset.
+Step 2: A bucket was set up to store the dataset.
 
-Step 3: Hemos vinculado en el notebook “data-preprocessing” el dataset que hemos subido en el paso 2 y hemos realizado el data preprocessing. Seguidamente, hemos hecho el train-test-validation split. Los ficheros generados los hemos guardado de vuelta en nuestro Bucket en S3
+Step 3: In the "data-preprocessing" notebook, we linked the dataset uploaded in step 2 and performed the necessary data preprocessing. This included a train-test-validation split, with the resulting files being saved back to our S3 bucket.
 
-Paso 4: hemos creado otro notebook en Jupyter llamado “model-deployment" donde importamos los datasets desde S3 a SageMaker creados en el paso anterior. Seguidamente, definimos un endpoint.
+Step 4: Another notebook was created called "model-deployment". Here, we imported the datasets from S3 to SageMaker and defined an endpoint.
 
-Paso 5: hemos creado una API para poder obtener los resultados de nuestras predicciones. Para poder utilizarla debemos definir una Lambda function que realizamos en el siguiente paso.
+Step 5: An API was created to obtain the prediction results. A Lambda function was defined in the next step to enable the use of this API.
 
-Paso 6: hemos creado una lambda function que permite crear un puente entre SageMaker y la API
+Step 6: A Lambda function was created to serve as a bridge between SageMaker and the API.
 
-Paso 7: hacemos deployment del modelo para poder lanzar las requests desde la API.
+Step 7: The model was deployed to allow for API requests to be launched.
